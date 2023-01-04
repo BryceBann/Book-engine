@@ -51,3 +51,9 @@ server.js import the apollo create schema with index, typeDef, resolvers
 app.js import apollo.js create client token operation
 
 add mutation and querie js in utils of client
+
+
+adds to apollo db?
+header field to large 431 error code 
+findDOMNode when clicking on login and sign up
+unexpected end of json after trying to sign up or log in
