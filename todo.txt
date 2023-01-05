@@ -57,3 +57,10 @@ adds to apollo db?
 header field to large 431 error code 
 findDOMNode when clicking on login and sign up
 unexpected end of json after trying to sign up or log in
+
+new error on terminal 
+(node:12888) Warning: Accessing non-existent property 'count' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12888) Warning: Accessing non-existent property 'findOne' of module exports inside circular dependency
+(node:12888) Warning: Accessing non-existent property 'remove' of module exports inside circular dependency
+(node:12888) Warning: Accessing non-existent property 'updateOne' of module exports inside circular dependency
