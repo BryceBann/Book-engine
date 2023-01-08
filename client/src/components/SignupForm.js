@@ -20,6 +20,7 @@ const SignupForm = () => {
     if (error) {
       console.log(error)
       console.log("test")
+      console.log(ADD_USER)
     } else {
       console.log("no error")
     }
