@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {useMutation} from '@apollo/react-hooks';
+import {useMutation} from '@apollo/client';
 import {ADD_USER} from '../utils/mutation';
 import { Form, Button, Alert } from 'react-bootstrap';
 

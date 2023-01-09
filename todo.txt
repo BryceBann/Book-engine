@@ -68,3 +68,6 @@ new error on terminal
 
 back end works
 check front for linking to back error
+
+redo were apollo/client went 
+atill not working
