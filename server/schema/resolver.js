@@ -20,7 +20,6 @@ const resolvers = {
       addUser: async (parent, args) => {
         try {
           const user = await User.create(args);
-  
           const token = signToken(user);
           return { token, user };
         } catch (err) {
@@ -29,7 +28,6 @@ const resolvers = {
       },
       login: async (parent, { email, password }) => {
         const user = await User.findOne({ email });
-  
         if (!user) {
           throw new AuthenticationError("Incorrect credentials");
         }
@@ -49,7 +47,7 @@ const resolvers = {
             { _id: context.user._id },
             { $addToSet: { savedBooks: args.input } },
             { new: true, runValidators: true }
-          );
+          ).populate("books");
   
           return updatedUser;
         }
